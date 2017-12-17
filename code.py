@@ -8,13 +8,13 @@ Ytr=[]
 Yts=[]
 Lts=[]
 
-for i in range(0,1000) :
+for i in range(0,1000) :		#generate random values (x,y) for training set
 	x=10*np.random.random()
 	y=10*np.random.random()
 	Xtr.append(x)
 	Ytr.append(y)
 
-	if x<y :
+	if x<y :			
 		Ltr.append(1)
 		plt.plot(x,y,'bs')
 	else :
